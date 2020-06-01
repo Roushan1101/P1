@@ -1,0 +1,104 @@
+body{
+  background-image: url('../img/william-daigneault-Cd84YdL9px8-unsplash.jpg');
+}
+#footm2{
+  background-color: black;
+
+}
+
+
+.col-sm-3{
+  margin: auto;
+  height:300px;
+  border:5px ridge black;
+  padding: 0px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+.col-sm-3:hover{
+  border-radius: 20px;
+  border:3px ridge white;
+}
+@media (min-width:992px) and (max-width:1400px){
+  .col-sm-3{
+    width:20%;
+    margin-left: 50px;
+    height:360px;
+    margin-top: 100px;
+  }
+}
+@media (min-width:711px)and (max-width:991px){
+  .col-sm-3{
+    width:25%;
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+}
+
+@media (min-width:200px) and (max-width:772px){
+  .col-sm-3{
+    width:75%;
+    height:550px;
+    margin-top: 30px;
+  }
+  body{
+    background-position: right;
+  }
+}
+
+
+
+
+#btn {
+  background: #222;
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #eee;
+  font-size: 40px;
+  font-family: 'Cookie', cursive;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+  box-shadow: 4px 15px 15px gray;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#btn:hover {
+  background: transparent;
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 150px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+}
